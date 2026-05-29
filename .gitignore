@@ -1,0 +1,89 @@
+# Generic Python project ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+VENV/
+.idea/
+.vscode/
+*.egg-info/
+*.egg
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# DATASETS - Do NOT push to GitHub (files are too large)
+# ============================================================
+# CSV data files
+*.csv
+data/
+datasets/
+dataset/
+
+# Specific project dataset files
+creditcard.csv
+creditcard_synthetic.csv
+creditcard_2023.csv
+*.data
+
+# Parquet / Feather / HDF5 / Arrow (large binary data formats)
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.arrow
+*.pkl
+*.pickle
+
+# NumPy arrays
+*.npy
+*.npz
+
+# ============================================================
+# MODELS - Large trained model files (optional: comment out
+#           if you WANT to push model weights)
+# ============================================================
+models/saved/
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.onnx
+
+# ============================================================
+# Streamlit cache
+# ============================================================
+.streamlit/
+.st_cache/
+__streamlit_cache__/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Packages / build artifacts
+*.whl
+*.tar.gz
+dist/
+build/
+
+# Secrets & credentials — NEVER commit these!
+*.env
+.env
+.env.*
+secrets.json
+config/secrets*
